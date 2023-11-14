@@ -82,7 +82,7 @@ EOF.1.9907819043.MOCK_SAMPLE.ENCTR.DF.1.20231103133300
 
 Tips: The reference of Structured Data (DF) File can be found in the Section 8 of the document.
 
-The correct appointment date is 21 Oct 2023. Please choose the best DF file content below to update the same record in eHR, and fill in (A) to (F) in the answer.
+The correct appointment date is 18 Nov 2023. Please choose the best DF file content below to update the same record in eHR, and fill in (A) to (F) in the answer.
 
 (A)
 642970757724|MOCK_ENCTR_HCR2|2023-11-01 01:00:00.000|I|2023-11-02  01:05:30.220|APP-OP|||9907819043|9907819043|O|||1||||||||||||||||||||||||2023-11-18 00:00:00.000||||||||||||||||||||||||||||||||||\CR\
