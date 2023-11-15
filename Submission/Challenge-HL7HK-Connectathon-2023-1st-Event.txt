@@ -32,8 +32,8 @@ Please fill in the HCRs' Document Type and Document Number in Patient List (PL) 
 Tips: The reference of Recipient List (PL) Interface File can be found in the Section 9 of the document.
 
 ANSWER:
-317450535389|M|1988-03-08 00:00:00.000||||CHAN|BURRY|\CR\
-642970757724|F|1968-08-08 00:00:00.000||||LEE|APPLE|\CR\
+317450535389|M|1988-03-08 00:00:00.000|W1200073|ID|W1200073|CHAN|BURRY|\CR\
+642970757724|F|1968-08-08 00:00:00.000||OC|OC230714162954|LEE|APPLE|\CR\
 EOF.2.9907819043.MOCK_SAMPLE.ENCTR.PL.1.20231103133300
 
 ---------------------------------------------------------------------------------------
@@ -69,7 +69,7 @@ EOF.1.9907819043.MOCK_SAMPLE.ENCTR.DF.1.20231130141100
 642970757724|RECORD_KEY_TEST_1|2023-11-01 00:00:00.000|I|2023-11-01 00:00:00.000|APP-OP|||9907819043|9907819043|O|||1||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\CR\
 EOF.1.9907819043.MOCK_SAMPLE.ENCTR.DF.1.20231105000000
 
-ANSWER: __PUT_YOUR_ANSWER_HERE__
+ANSWER: (C)
 
 ---------------------------------------------------------------------------------------
 [E1P1Q3] Updating a encounter record in eHR
@@ -82,7 +82,7 @@ EOF.1.9907819043.MOCK_SAMPLE.ENCTR.DF.1.20231103133300
 
 Tips: The reference of Structured Data (DF) File can be found in the Section 8 of the document.
 
-The correct appointment date is 18 Nov 2023. Please choose the best DF file content below to update the same record in eHR, and fill in (A) to (F) in the answer.
+The correct appointment date is 21 Oct 2023. Please choose the best DF file content below to update the same record in eHR, and fill in (A) to (F) in the answer.
 
 (A)
 642970757724|MOCK_ENCTR_HCR2|2023-11-01 01:00:00.000|I|2023-11-02  01:05:30.220|APP-OP|||9907819043|9907819043|O|||1||||||||||||||||||||||||2023-11-18 00:00:00.000||||||||||||||||||||||||||||||||||\CR\
@@ -108,7 +108,9 @@ EOF.1.9907819043.MOCK_SAMPLE.ENCTR.DF.1.20231103143301
 642970757724|MOCK_ENCTR_HCR2|2023-11-01 01:00:00.000|U|2023-11-01 14:45:21.360|APP-OP|||9907819043|9907819043|O|||1||||||||||||||||||||||||2023-11-18 00:00:00.000||||||||||||||||||||||||||||||||2023-11-01 14:45:21.360||\CR\
 EOF.1.9907819043.MOCK_SAMPLE.ENCTR.DF.1.20231103143301
 
-ANSWER: __PUT_YOUR_ANSWER_HERE__
+ANSWER: (H)
+642970757724|MOCK_ENCTR_HCR2|2023-11-01 01:00:00.000|U|2023-11-18 16:47:39.050|APP-OP|||9907819043|9907819043|O|||1||||||||||||||||||||||||2023-10-21 00:00:00.000||||||||||||||||||||||||||||||||2023-11-18 16:47:39.050||\CR\
+EOF.1.9907819043.MOCK_SAMPLE.ENCTR.DF.1.20231103143301
 
 
 
@@ -135,7 +137,8 @@ The specifications of the Drug record can be located in the below link.
 
 Tips: The reference to Patient resource can be found in the Section 10.1.4 of the document.
 
-ANSWER: __PUT_YOUR_ANSWER_HERE__
+ANSWER: CHAN TAI MAN
+
 
 ---------------------------------------------------------------------------------------
 [E1P2Q2] Referring to the sample file "RXO_sample_L3.json"(https://github.com/hl7hongkong/HL7-Hong-Kong-Connectathon-2023-1st-Event/blob/main/Part_2_Drug_Record_Download/RXO_sample_L3.json), what is the dosage frequency for Panadol ordered on 13 Mar 2023?
@@ -143,25 +146,25 @@ ANSWER: __PUT_YOUR_ANSWER_HERE__
 
 Tips: The reference to MedicationRequest resource can be found in the Section 10.1.6 of the document.
 
-ANSWER: __PUT_YOUR_ANSWER_HERE__
+ANSWER: 1 tablet three times daily oral for 1 Weeks, total 21 tablet
 
 ---------------------------------------------------------------------------------------
 [E1P2Q3] Referring to the sample file "RXO_sample_L3.json"(https://github.com/hl7hongkong/HL7-Hong-Kong-Connectathon-2023-1st-Event/blob/main/Part_2_Drug_Record_Download/RXO_sample_L3.json), what is the terminology ID for "Panadol (paracetamol) oral tablet 500 mg (HK-02280)" in Hong Kong Medication Terminology Table (HKMTT)?
 ---------------------------------------------------------------------------------------
 
-ANSWER: __PUT_YOUR_ANSWER_HERE__
+ANSWER: 6027457
 
 ---------------------------------------------------------------------------------------
 [E1P2Q4] Referring to the sample file "RXO_sample_L2.json"(https://github.com/hl7hongkong/HL7-Hong-Kong-Connectathon-2023-1st-Event/blob/main/Part_2_Drug_Record_Download/RXO_sample_L2.json), what is the coding system used for "PARACETAMOL (ORAL)"?
 ---------------------------------------------------------------------------------------
 
-ANSWER: __PUT_YOUR_ANSWER_HERE__
+ANSWER: local
 
 ---------------------------------------------------------------------------------------
 [E1P2Q5] Referring to the Q3 and Q4 about "Paracetamol", which of the 2 coding systems is better for information exchange?
 ---------------------------------------------------------------------------------------
 
-ANSWER: __PUT_YOUR_ANSWER_HERE__
+ANSWER: Hong Kong Medication Terminology Table (HKMTT)
 
 
 
@@ -188,7 +191,7 @@ The specifications of the GOPC PPP data can be located in the below link.
 
 Tips: The reference to QuestionnaireResponse resource can be found in the Section 11.4 of the document.
 
-ANSWER: __PUT_YOUR_ANSWER_HERE__
+ANSWER: DM (Diabetes Mellitus)
 
 ---------------------------------------------------------------------------------------
 [E1P3Q2] Referring to the sample file "connectathon_ppp_sample_data.json"(https://github.com/hl7hongkong/HL7-Hong-Kong-Connectathon-2023-1st-Event/blob/main/Part_3_GOPC_PPP_Data_Download/connectathon_ppp_sample_data.json), what is the patient's body temperature?
@@ -196,4 +199,4 @@ ANSWER: __PUT_YOUR_ANSWER_HERE__
 
 Tips: The reference to QuestionnaireResponse resource can be found in the Section 11.4 of the document.
 
-ANSWER: __PUT_YOUR_ANSWER_HERE__
+ANSWER: 37
